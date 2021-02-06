@@ -1,11 +1,11 @@
-### HRV data preprocessing for FL research
+## HRV data preprocessing for FL research
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 # from PIL import Image
-
+# Use this when we directly using images for learning
 
 # HRV 데이터셋 불러오기
 hrv_df = pd.read_csv('E:/RESEARCH/Datasets/HRV_samsung/HRV_REV_all.csv', sep=',')
