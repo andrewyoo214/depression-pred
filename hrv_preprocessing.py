@@ -62,7 +62,7 @@ hrv_100[:] = scaler.fit_transform(hrv_100[:])
 # hrv_100[:] = stscaler.fit_transform(hrv_100[:])
 
 
-#normalize 제대로 되어 있는지 확인
+# 0에서 1 사이로의 normalize 제대로 되어 있는지 확인
 hrv_100.head()
 
 
