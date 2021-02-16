@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-# from PIL import Image
+from PIL import Image
 # Use this when we directly using images for learning
 
 # HRV 데이터셋 불러오기
@@ -24,7 +24,7 @@ hrv_df['null8'] = 0
 hrv_df['null9'] = 0
 hrv_df['null10'] = 0
 
-
+#dataset shape
 hrv_df.shape
 
 #hrv data확인
@@ -57,9 +57,9 @@ hrv_100[:] = scaler.fit_transform(hrv_100[:])
 
 
 # 만약에 평균0, 표준편차 1의 표준정규분포를 따르도록 변환하려면 아래와 같이 실행 (근데 이건 gender나 age변수에 대해서는 안좋음)
-# from sklearn.preprocessing import StandardScaler
-# stscaler = StandardScaler()
-# hrv_100[:] = stscaler.fit_transform(hrv_100[:])
+from sklearn.preprocessing import StandardScaler
+stscaler = StandardScaler()
+hrv_100s[:] = stscaler.fit_transform(hrv_100[:])
 
 
 # 0에서 1 사이로의 normalize 제대로 되어 있는지 확인
